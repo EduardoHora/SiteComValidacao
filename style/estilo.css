@@ -1,0 +1,231 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(70, 142, 236);
+    font: normal 15pt Arial;
+}
+section{
+    padding: 1rem;
+    margin: auto; /*para centralizar o objeto*/
+}
+
+/* menu de navegação */
+.cabecalho{
+    background: rgb(48, 111, 194);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: black;
+    box-shadow: 1px 0px 15px black;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+/* Logo */
+.cabecalho .logo{
+    color: white;
+    font-weight: 400;
+}
+.cabecalho .logo span{
+    color: rgb(7, 7, 117);
+}
+/* Menu */
+.cabecalho .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:#fff;
+}
+.cabecalho .navbar a:hover{
+    color:rgb(8, 48, 99);
+    border-bottom: .1rem solid rgb(8, 48, 99);
+    padding-bottom: .5rem;
+}
+.cabecalho .icones div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+.cabecalho .icones div:hover{
+    color:rgb(8, 48, 99);
+}
+
+/* Carrossel */
+.carrocel{
+    position: relative;
+    padding: 0;
+    top: 80px;
+    width: 95%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+#imgCarrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.carrocel .conteudo{
+    position: absolute;
+    top: 50px;
+    max-width: 60rem;
+    margin-left: 8rem;
+}
+.carrocel .conteudo h3{
+    position: relative;
+    margin-top: 20px;
+    height: 50px;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+.carrocel .conteudo p{
+    position: relative;
+    margin-top: 70px;
+    height: 50px;
+    font-size: 2rem;
+    font-weight: lighter;
+    padding:1rem 0;
+    color:#eee;
+}
+.carrocel .conteudo a{
+    position: relative;
+    margin-top:50px;
+}
+#setaDireita{
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
+#setaEsquerda{
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+}
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgb(76, 146, 238);
+    cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: .2rem;
+}
+.encapsulado{
+    position: relative;
+    top: 130px;
+    height: 250px;
+    text-align: center;
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+
+}
+
+.curriculoHome, .questionarioHome, .faleConoscoHome{
+  position: relative;
+  background-color: rgb(30, 114, 210);
+  border-radius: 5px;
+  padding: 20px;
+  width: 460px;
+}
+.curriculoHome:hover, .questionarioHome:hover, .faleConoscoHome:hover{
+    letter-spacing: .5rem;
+    background-color: rgb(0, 0, 56);
+  }
+
+/* Titulo da Home */
+.tituloSecessoesHome{
+    text-align: center;
+    color:rgb(0, 0, 56);
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.tituloSecessoesHome:Hover{
+    color:rgb(93, 93, 223);
+}
+
+/* Título das Seções*/
+.tituloSecessoes{
+    text-align: center;
+    color:rgb(0, 0, 56);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.tituloSecessoes span, .tituloSecessoesHome span{
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+
+/* Roda pé */
+.footer{
+    background: rgb(48, 111, 194);
+    padding: 2rem 0;
+}
+.box-conteudo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: unset;
+    justify-items: center;
+    margin-left: 20%;
+}
+.box h3{
+    font-size: 2.2rem;
+    padding:1rem 0;
+    color:black;
+}
+.box a{
+    display: block;
+    font-size: 1.4rem;
+    padding:1rem 0;
+    color:rgb(161, 193, 236);
+}
+.box a i{
+    padding-right: .5rem;
+    color:rgb(8, 48, 99);
+}
+.box a:hover i{
+    padding-right: 2rem;
+}
+.credito{
+    margin-top: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color:rgb(161, 193, 236);
+    border-top: 1px solid rgb(7, 7, 117);
+}

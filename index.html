@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style/estilo.css">
+    <title>Projeto Final Javascript</title>
+</head>
+<body>
+    <header class="cabecalho">
+
+        <a href="#" class="logo">
+            <h2>DaHora <span>Dev</span></h2>
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="curriculo.html">curriculo</a>
+            <a href="questionario.html">questionario</a>
+            <a href="faleConosco.html">faleConosco</a>
+        </nav>
+
+        <div class="icones">
+            <div class="fas fa-search" id="pesquisar-btn"></div>
+        </div>
+    </header>
+
+    <section class="carrocel" id="carrocel">
+        <img id="imgCarrossel" src="imagens/lampadas.jpg" alt="">
+
+        <div class="conteudo">
+            <h3 id="textH3">Sua ideia em Prática</h3>
+            <p id="textP">Colocamos suas idéias em execução da melhor e mais eficiente forma possível.</p>
+            <a href="#" class="btn">Entre em contato</a>
+        </div>
+        <div class="navCarrosselD">
+            <img id="setaDireita" src="imagens/SetaDireita.png" onclick="proximo()">
+            <img id="setaEsquerda" src="imagens/SetaEsquerda.png" onclick="anterior()">
+        </div>
+    </section>
+<div class="encapsulado">
+    <div class="banner">
+        <section class="curriculoHome" id="curriculo">
+            <a href="curriculo.html">
+                <h1 class="tituloSecessoesHome"> <span>Curriculum</span> Vitae </h1>
+            </a>
+        </section>
+
+        <section class="questionarioHome" id="questionario">
+            <a href="questionario.html">
+                <h1 class="tituloSecessoesHome"> <span>Questioná</span>rio</h1>
+            </a>
+        </section>
+
+        <section class="faleConoscoHome" id="faleConosco">
+            <a href="faleConosco.html">
+                <h1 class="tituloSecessoesHome"> <span>Fale</span> Conosco</h1>
+            </a>
+        </section>
+    </div>
+</div>
+
+
+    <section class="footer" id="footer">
+
+        <div class="box-conteudo">
+            <div class="box">
+                <h3>Navegação</h3>
+                <a href="index.html"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="curriculo.html"> <i class="fas fa-arrow-right"></i> Curriculo </a>
+                <a href="questionario.html"> <i class="fas fa-arrow-right"></i> Questionario </a>
+                <a href="faleConosco.html"> <i class="fas fa-arrow-right"></i> Fale Conosco </a>
+            </div>
+
+            <div class="box">
+                <h3>Contato</h3>
+                <a href="#"> <i class="fas fa-phone"></i> (21) 98888-7777 </a>
+                <a href="#"> <i class="fas fa-phone"></i> (21) 2222-3333 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> contato@dahora.dev </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Rua da Esquina, 10 - Centro - RJ </a>
+            </div>
+
+            <div class="box">
+                <h3>Redes Sociais</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+            </div>
+        </div>
+
+        <div class="credito">&copy; Eduardo Hora</div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
